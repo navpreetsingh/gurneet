@@ -1,0 +1,636 @@
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js no-touch js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="google-site-verification" content="Ysx1l996xH5jHvtvlfR90twbnvr_P5hoQdRclyS2Sts">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Meta tags -->
+   <title>Silentblast | Toronto Web Design Company | Canada</title>    <meta name="keywords" content="Toronto web design company creative agency">   <meta name="description" content="A Toronto web design company that offers professional custom web design, web development and search engine optimization services. Call 416-900-0869"> 
+  <!-- Open Graph tags -->
+    
+  
+  <meta name="google-site-verification" content="3Zi8qLm2kMlnsKXIDvuUcOheZg3PuzA6uaGezsnKCfE">
+
+  <!-- Jquery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+  <!-- Required FlexSlider Files -->
+  <script type="text/javascript" src="/jquery/FlexSlider/jquery.flexslider.js"></script>
+  <link rel="stylesheet" href="/jquery/FlexSlider/flexslider.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,200,100" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/includes/css.php">
+  <!--<link rel='stylesheet' href='/includes/application.css' type='text/css' />-->
+
+  <script type="text/javascript" src="/includes/js.php"></script>
+
+  <!-- Hover Effects -->
+  <script type="text/javascript" src="/includes/hover-effects/modernizr.js"></script>
+  <link rel="stylesheet" href="/includes/hover-effects/component.css" type="text/css">
+
+    <!-- LWD popup -->
+  <!--<script type='text/javascript' src='/jquery/lwd_popup/lwd_popup.js'></script>-->
+  <!--<link rel='stylesheet' href='/jquery/lwd_popup/lwd_popup.css' type='text/css' />-->
+
+
+  <!-- Lush Slider -->
+  <!--<script type='text/javascript' src='/jquery/lush/js/jquery.easing.1.3.min.js'></script>-->
+  <!--<script type='text/javascript' src='/jquery/lush/js/jquery.lush.min.js'></script>-->
+  <!--<script type='text/javascript' src='/jquery/lush/flexslider/jquery.flexslider-min.js'></script>-->
+
+  <!--<link rel='stylesheet' href='/jquery/lush/flexslider/flexslider.css' type='text/css' />
+  <link rel='stylesheet' href='/jquery/lush/css/lush.animations.min.css' type='text/css' />
+  <link rel='stylesheet' href='/jquery/lush/css/lush.min.css' type='text/css' />-->
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Load JS here for greater good =============================-->
+  <!--
+    <script src='/jquery/flat-ui/jquery.ui.touch-punch.min.js'></script>
+    <script src='/jquery/flat-ui/bootstrap-select.js'></script>
+    <script src='/jquery/flat-ui/bootstrap-switch.js'></script>
+    <script src='/jquery/flat-ui/flatui-checkbox.js'></script>
+    <script src='/jquery/flat-ui/flatui-radio.js'></script>
+    <script src='/jquery/flat-ui/jquery.tagsinput.js'></script>
+    <script src='/jquery/flat-ui/jquery.placeholder.js'></script>
+  -->
+
+  <!-- LWD pop out nav -->
+  <!--
+    <script src='/jquery/lwd_mobile_pop_nav/nav.js'></script>
+  -->
+
+  <!-- Loading Flat UI -->
+  <!--
+  <link rel='stylesheet' type='text/css' href='/includes/components.css' />
+  <link rel='stylesheet' type='text/css' href='/includes/flat-ui.css' />
+  -->
+  <!--<script src='/jquery/icon-hover/modernizr.custom.js'></script>-->
+
+  <!-- Default CSS / JS -->
+<!--
+  <link rel='stylesheet' href='/includes/default.css' type='text/css' />
+  <link rel='stylesheet' href='/includes/nav.css' type='text/css' />
+  <link rel='stylesheet' href='/includes/tablet.css' type='text/css' />
+  <link rel='stylesheet' href='/includes/mobile.css' type='text/css' />
+  <script type='text/javascript' src='/includes/default.js'></script>
+-->
+  <!-- LWD pop out nav -->
+  <!--<link rel='stylesheet' href='/jquery/lwd_mobile_pop_nav/nav.css' type='text/css' />-->
+
+
+  </head>
+
+  <body>
+
+<style>
+#main, #slider-container, #slider-container2, #footer { display: none; }
+#preloader { display: block; }
+</style>
+
+<script>
+$( document ).ready(function() {
+  $("#preloader").css( "display", "none" );
+  $("#main").css( "display", "block" );
+  $("#slider-container").css( "display", "block" );
+  $("#slider-container2").css( "display", "block" );
+  $("#footer").css( "display", "block" );
+});
+</script>
+
+  <div id="preloader" style="text-align: center; padding-top: 80px; display: none;"><img src="/images/Preloader_3.gif" alt=""><br>Programming the flux capacitor...</div>
+  <div id="main" style="display: block;">
+
+
+    <div id="head-bg" class="hidden-sm">
+      <div class="container">
+        <div class="row">
+          <div class="navbar navbar-inverse">
+            <div class="col-lg-3 col-xs-12 col-sm-3">
+              <a class="logo mlogo" href="/"><img src="/images/layout/logo.png" alt=""></a>
+            </div>
+
+            <div class="col-lg-9 col-xs-12 col-sm-9">
+                            <div class="nav-collapse pull-right">
+                <ul class="nav navbar-nav">
+                  <li><a href="/">home</a></li>
+                  <li><a href="/portfolio/1">portfolio</a></li>
+                  <li><a href="/services.php">services</a></li>
+                  <li><a href="/about-us.php">about us</a></li>
+                  <li><a href="/insights/">insights</a></li>
+                  <li><a href="/get-in-touch.php">get in touch</a></li>
+
+                </ul>
+              </div><!-- /.nav-collapse -->
+
+
+            </div>
+          </div>
+        </div><!-- EO row -->
+      </div><!-- EO container -->
+    </div><!-- EO head-bg -->
+
+
+
+
+
+
+    <div id="head-bg" class="visible-sm">
+      <div class="container">
+        <div class="row">
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+
+<div id="lwd_mobile_pop_nav" class="phone-menu sm-nav" style="right: -185px;">
+  <a href="#" class="pull-left menu-btn"><img src="/images/layout/menu-btn.png" alt=""></a>
+  <div class="menu" style="height: 3936px;">
+    <a href="/" class="menu-item" style="line-height: 38px; height: 38px;">
+      <div class="menu-item-inner">
+        <i class="fa fa-home"></i> home
+      </div>
+    </a>
+
+    <a href="/portfolio/1" class="menu-item" style="line-height: 38px; height: 38px;">
+      <div class="menu-item-inner">
+        <i class="fa fa-suitcase"></i> portfolio
+      </div>
+    </a>
+
+    <a href="/services.php" class="menu-item" style="line-height: 38px; height: 38px;">
+      <div class="menu-item-inner">
+        <i class="fa fa-camera"></i> services
+      </div>
+    </a>
+
+    <a href="/about-us.php" class="menu-item" style="line-height: 38px; height: 38px;">
+      <div class="menu-item-inner">
+        <i class="fa fa-heart"></i> about us
+      </div>
+    </a>
+
+    <a href="/insights/" class="menu-item" style="line-height: 38px; height: 38px;">
+      <div class="menu-item-inner">
+        <i class="fa fa-comments"></i> insights
+      </div>
+    </a>
+
+    <a href="/get-in-touch.php" class="menu-item" style="line-height: 38px; height: 38px;">
+      <div class="menu-item-inner">
+        <i class="fa fa-phone-square"></i> get in touch
+      </div>
+    </a>
+
+    <div class="bottom-logo">
+      <img src="/images/layout/logo-lg.png" alt="">
+    </div>
+  </div>
+</div>
+          <div class="col-xs-8 col-sm-8">
+            <a class="logo mlogo" href="/"><img src="/images/layout/logo.png" alt=""></a>
+          </div>
+
+          <div class="col-xs-4 col-sm-4">
+
+            &nbsp;
+
+          </div>
+        </div><!-- EO row -->
+      </div><!-- EO container -->
+    </div><!-- EO head-bg -->
+
+
+
+
+
+    <div class="header-height"></div>
+
+        <div class="row" style="margin: 0px;">
+      <div id="slider-container" class="col-12 col-lg-12 col-sm-12" style="display: block;">
+  <!-- Lush Slider (autoload) -->
+  <div id="main-slider" class="lush-slider container lush-skin-borderless" data-slider-pause-on-hover="true" style="height: 625px;">
+
+
+        <!-- Slide 1 -->
+        <div class="lush row active paused" style="margin: 0px; width: 960px; height: 625px; visibility: visible; display: block;">
+      <div class="banner_txt col-12 col-lg-12 col-sm-12 in fade live" style="top: 22.4%; position: absolute; font-size: 16px; line-height: 19px; padding: 0px; border: 0px none rgb(52, 73, 94); height: 168px; width: 960px; transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;" data-slide-in="at 600 from fade use easeOutBack during 600" data-slide-out="at 1500 to fade use easeInBack during 600">
+        <p>Looking for a boutique <br>Toronto web design agency? <br></p>
+        <b>We <i style="color: #e84c3d;" class="fa fa-heart"></i> to craft awesomeness</b>
+      </div>
+      <div class="banner_link col-12 col-lg-12 col-sm-12 in bounce-top live" style="top: 57.6%; position: absolute; font-size: 16px; line-height: 19px; padding: 0px; border: 0px none rgb(52, 73, 94); height: 74px; width: 960px; transition: none; animation-duration: 1000ms; animation-timing-function: ease-out;" data-slide-in="at 500 from bounce-top during 1000" data-slide-out="at 1500 to fade use easeInBack during 600">
+        <a href="#services" class="anchorLink"><img src="/images/layout/arrow-circle-white.png" onmouseover="this.src='/images/layout/arrow-circle-red.png'" onmouseout="this.src='/images/layout/arrow-circle-white.png'"></a>
+      </div>
+    </div> <!-- EO slide1 -->
+
+
+
+  <div class="lush-shadow"></div></div>
+  <!-- /Lush Slider -->
+</div>
+
+
+<!-- Required javascript -->
+<script src="./jquery/lush/js/jquery.lush.min.js"></script>
+
+<!-- Lush styles -->
+<link rel="stylesheet" href="./jquery/lush/css/lush.animations.min.css">
+<link rel="stylesheet" href="./jquery/lush/css/lush.min.css">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<!-- Plugin invocation -->
+<script>
+  $(function(){
+    $('#main-slider').lush({
+            baseWidth: 960,
+        baseHeight: 625,
+        deadtime: 5000,
+        manual: true,
+        slider: {
+          navigation: false,
+          responsive: true
+      }
+    });
+  })
+</script>
+
+<!-- Slider custom styles -->
+<style type="text/css">
+  #slider-container {
+    width:100%;
+    overflow-y:hidden;
+    background: url('./images/banner17.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .banner_txt { text-align: center; }
+  .banner_txt p, .banner_txt b { display: block; font-size: 54px; margin: 0 0 12px 0; font-family: 'Roboto', sans-serif; color: #2c3e50; font-weight: 100; line-height: 56px; }
+  .banner_txt b { font-weight: 700; }
+  .banner_link { text-align: center; }
+  .banner_txt, .banner_link { width: 960px; padding: 0; }
+  .lush * { white-space: normal !important; }
+
+  @media only screen and (max-width: 1024px) {
+    #slider-container {
+      /*background-size: 100% auto;*/
+      background-attachment: scroll;
+    }
+  }
+</style>      <div class="clear"></div>
+    </div>
+    
+    <div class="container">
+
+<div class="row top-h1">
+  <div class="col-12 col-lg-12 col-sm-12 ">
+    <h1 class="text-center">We envision, design, and build beautiful custom websites that attract customers and impress viewers.</h1>
+  </div>
+</div>
+</div>
+
+<div class="grey-bar">
+  <div class="container">
+    <div class="row mt40 mb20">
+      <div class="col-sm-6 show-for-mobile hide-for-large">
+        <img src="/images/layout/fpo-home-portfolio.png" class="home-port-img">
+      </div>
+      <div class="col-sm-6 mt30 project-details">
+        <h2>Featured Project</h2>
+        <h3>Minfulocity</h3>
+        <p>Minfulocity promotes the Healing Principles From Yoga, Meditation, Holistic Nutrition, Ayurveda and Traditional Chinese Medicine.</p>
+        <ul>
+          <li>Logo and Branding Design</li>
+          <li>UX (User experience) Design</li>
+          <li>Responsive Website Design and Development</li>
+          <li>Content Management</li>
+          <li>E-Commerce Integration</li>
+        </ul>
+        <a href="/portfolio/" class="btn btn-primary">View Portfolio</a>
+      </div>
+      <div class="col-sm-6 hide-for-mobile">
+        <img src="/images/layout/fpo-home-portfolio.png" class="home-port-img">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="row mid-h1 mt70">
+  <div class="col-12 col-lg 12">
+    <a name="services"></a>
+    <p class="text-center ltitle36">We build stunning websites from the ground up. <br>What can we do for your organization?</p>
+  </div>
+</div>
+
+<div class="row hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+  <div class="col-lg-4 col-xs-12 col-sm-4">
+    <div class="feature-bg">
+      <a class="hi-icon" href="/creative-web-and-ui-design.php"><i class="fa fa-heart">&nbsp;</i></a>
+      <p class="ftitle">Creative Web &amp; UI Design</p>
+      <p class="fbody">Grow your business <br>
+      with a great website</p>      
+      <p class="text-center pbtn"><a href="/creative-web-and-ui-design.php" class="btn btn-primary">Learn More</a></p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-xs-12 col-sm-4">
+    <div class="feature-bg">
+      <a class="hi-icon" href="/web-and-mobile-development.php"><i class="fa fa-code">&nbsp;</i></a>
+      <p class="ftitle">Web &amp; Mobile Development</p>
+      <p class="fbody">Custom programming <br>
+      adds power and profits</p>
+      <p class="text-center pbtn"><a href="/web-and-mobile-development.php" class="btn btn-primary">Learn More</a></p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-xs-12 col-sm-4">
+    <div class="feature-bg">
+      <a class="hi-icon" href="/search-engine-optimization.php"><i class="fa fa-search">&nbsp;</i></a>
+      <p class="ftitle">Search Engine Optimization</p>
+      <p class="fbody">Make your website <br>
+      easier to find. </p>
+      <p class="text-center pbtn"><a href="/search-engine-optimization.php" class="btn btn-primary">Learn More</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="row mproject-btn">
+  <div class="col-12 col-lg-12">
+    <p class="text-center"><a href="/services.php" class="btn btn-warning">View All Our Services</a></p>
+  </div>
+</div>
+
+
+<div class="row bot-h1">
+  <div class="col-12 col-lg 12">
+    <p class="text-center ltitle36">We believe in creativity, one-on-one service,<br> 
+    and relationships that develop over time.</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="row">
+  <div class="col-lg-6 col-xs-12 col-sm-6">
+    <p>Looking for a Toronto web design company?  What you need isn’t another generic website - it’s a custom-built web presence backed by a team of experienced Internet strategists. Since 2006, Silentblast has been that team, helping our clients to blend stunning aesthetics, fresh content, robust functionality, and proven marketing techniques into a profitable mix.</p>
+  </div>
+  <div class="col-lg-6 col-xs-12 col-sm-6">
+    <p>We aren’t interested in creating new pages; we want to help you build a better, smarter business. That’s why we start every project by getting to know you and your business... it’s the only way we can deliver the results you need for your next website.</p>
+  </div>
+</div>
+
+<div class="row mdevice">
+  <div class="col-12 col-lg-12">
+    <p class="text-center"><img src="./images/layout/img-devices.jpg" alt=""></p>
+  </div>
+</div>
+
+<div class="row mproject-btn">
+  <div class="col-12 col-lg-12">
+    <p class="text-center"><a href="/about-us.php" class="btn btn-warning">Learn More About Us</a></p>
+  </div>
+</div>
+
+
+
+    </div> <!-- eo .container -->
+
+
+    <!--<div id = "push"></div>-->
+  </div> <!-- eo #main -->
+
+  <div class="row" style="margin: 0px;">
+    <div id="slider-container2" class="col-12 col-lg-12 col-sm-12" style="display: block;">
+  <!-- Lush Slider (autoload) -->
+  <div id="main-slider2" class="lush-slider container lush-skin-borderless" data-slider-pause-on-hover="true" style="height: 371.067px;">
+
+
+        <!-- Slide 1 -->
+        <div class="lush row active paused" style="width: 960px; height: 371.067px; visibility: visible; display: block;">
+      <div class="banner_txt col-12 col-lg-12 col-sm-12 in fade live" style="top: 32.1716%; position: absolute; font-size: 15px; line-height: 18px; padding: 0px; border: 0px none rgb(52, 73, 94); height: 119.378px; width: 955.026px; transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;" data-slide-in="at 0 from fade use easeOutBack during 600" data-slide-out="at 1500 to fade use easeInBack during 600">
+        <p>Experience you can count on</p>
+        <b>and strategies that deliver</b>
+      </div>
+    </div> <!-- EO slide1 -->
+
+
+  <div class="lush-shadow"></div></div>
+  <!-- /Lush Slider -->
+</div>
+
+
+<!-- Required javascript -->
+<script src="./jquery/lush/js/jquery.lush.min.js"></script>
+
+<!-- Lush styles -->
+<link rel="stylesheet" href="./jquery/lush/css/lush.animations.min.css">
+<link rel="stylesheet" href="./jquery/lush/css/lush.min.css">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<!-- Plugin invocation -->
+<script>
+  $(function(){
+    $('#main-slider2').lush({
+            baseWidth: 965,
+        baseHeight: 373,
+        deadtime: 5000,
+        manual: true,
+        slider: {
+          navigation: false,
+          responsive: true
+      }
+    });
+  })
+</script>
+
+<!-- Slider custom styles -->
+<style type="text/css">
+  #slider-container2 {
+    width:100%;
+    overflow-y:hidden;
+    background: url('/images/banner6_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .banner_txt { text-align: center; }
+  .banner_txt p, .banner_txt b { display: block; font-size: 48px; margin: 0 0 12px 0; font-family: 'Roboto', sans-serif; color: #FFF; font-weight: 100; line-height: 48px; }
+  .banner_txt b { font-weight: 700; }
+  .banner_link { text-align: center; }
+  .banner_txt, .banner_link { width: 960px; padding: 0; }
+
+  @media only screen and (max-width: 1024px) {
+    #slider-container2 {
+      /*background-size: 100% auto;*/
+      background-attachment: scroll;
+    }
+  }
+</style>     <div class="clear"></div>
+  </div>
+
+
+<footer id="footer" style="display: block;">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12"><div style="height: 45px;"></div></div>
+    </div>
+    <div class="row footer-bot">
+      <div class="col-lg-4 col-xs-12 col-sm-4 farea1 mob-center">
+        <p class="footer-title mservice">Our core services</p>
+        <ul>
+          <li><a href="/creative-web-and-ui-design.php">Creative Web and UI Design</a></li>
+          <li><a href="/web-and-mobile-development.php">Web and Mobile Development</a></li>
+          <li><a href="/search-engine-optimization.php">Search Engine Optimization</a></li>
+          <li><a href="/brand-identity.php">Brand Identity</a></li>
+          <li><a href="/social-media-management.php">Social Media Management</a></li>
+          <li><a href="/web-content-and-copywriting.php">Web Content</a></li>
+        </ul>
+      </div>
+
+      <!-- INSIGHTS TEASERS -->
+    <div class="col-lg-4 col-xs-12 col-sm-4 lr-border farea2">
+      <p class="footer-title mservice">Latest Insights</p>
+        <div class="blog-teasers widget">
+          <div class="blog-teasers-inner mob-center">
+            <ul>
+                            <li>
+                  <h3><a href="/insights/details.php?id=78">Holiday Shopping Trends 2015: 3 Predictions for Retailers</a></h3>
+              </li>
+                            <li>
+                  <h3><a href="/insights/details.php?id=74">Make your brand social, across the web</a></h3>
+              </li>
+                            <li>
+                  <h3><a href="/insights/details.php?id=70">5 Questions to Ask Yourself Before You Devote More Time to Social Media</a></h3>
+              </li>
+                            <li>
+                  <h3><a href="/insights/details.php?id=13">Missing Mobile Compatibility? 3 Steps to Take Today</a></h3>
+              </li>
+                            <li>
+                  <h3><a href="/insights/details.php?id=11">WordPress Security and why you should care</a></h3>
+              </li>
+                          </ul>
+          </div>
+        </div>
+      </div>
+<!-- EO INSIGHTS TEASERS -->
+      <!--<div class = "col-lg-4 col-xs-12 col-sm-4 lr-border farea2">
+        <p class="footer-title mservice">Latest from our blog</p>
+        <ul>
+          <li><a href="#">Transfering large files made simple and secure</a></li>
+          <li><a href="#">Adding music or audio on your website, blog or social media site</a></li>
+          <li><a href="#">Adding music or audio on your website, blog or social media site</a></li>
+        </ul>
+      </div>-->
+      <div class="col-lg-4 col-xs-12 col-sm-4 farea3 mob-center">
+        <p class="footer-title mservice">Get In Touch</p>
+        <p>Toronto : <b>(416) 900-0869</b></p>
+        <a href="/get-in-touch.php" class="footer-contact">+ Contact Us</a>
+        
+
+        <hr>
+        <p><b>Existing Clients</b></p>
+        <a href="https://books.zoho.com/portal/silentblastinc/login" class="footer-contact">+ Client Portal</a><br>
+        <a href="/hosting-support.php" class="footer-contact">+ Hosting &amp; Technical Support</a>
+
+
+        <div class="mcontact social">
+          <p class="mob-center">
+            <a href="http://www.facebook.com/silentblastinteractive"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/#!/silentblast"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/109335371201079665242/about"><i class="fa fa-google-plus"></i></a>
+            <a href="http://pinterest.com/silentblast/"><i class="fa fa-pinterest-p"></i></a>
+            <a href="https://instagram.com/silentblast/"><i class="fa fa-instagram"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script type="text/javascript">
+    var url = window.location;
+    // Will only work if string in href matches with location
+    $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+  </script>
+
+  <script type="text/javascript">
+    $(".port-item").hover(function () {
+     $(this).find(".port-hover").fadeTo(50, 1);
+    },
+    function(){
+        $(this).find(".port-hover").fadeTo(50, 0);
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("select").selectpicker({style: 'btn-hg btn-primary', menuStyle: 'dropdown-inverse'});
+
+      // style: select toggle class name (which is .btn)
+      // menuStyle: dropdown class name
+
+      // You can always select by any other attribute, not just tag name.
+      // Also you can leave selectpicker arguments blank to apply defaults.
+    });
+  </script>
+
+</footer>
+
+<script>
+$(function() {
+  $( "#accordion" ).accordion();
+});
+
+$(document).ready(function($) {
+  $(".anchorLink").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$('[name="'+this.hash.substring(1)+'"]').offset().top}, 500);
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+</body></html>

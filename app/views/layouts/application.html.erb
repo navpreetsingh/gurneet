@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <!-- <meta name="google-site-verification" content="Ysx1l996xH5jHvtvlfR90twbnvr_P5hoQdRclyS2Sts"> -->
+
+    <%= favicon_link_tag 'favico.png', sizes: "32x32" %>  
+
+    <meta name="keywords" content="Toronto web design company creative agency">  <meta name="description" content="A Toronto web design company that offers professional custom web design, web development and search engine optimization services. Call 416-900-0869"> 
+    <!-- Open Graph tags -->
+      
+    
+    <!-- <meta name="google-site-verification" content="3Zi8qLm2kMlnsKXIDvuUcOheZg3PuzA6uaGezsnKCfE"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,200,100" rel="stylesheet" type="text/css">
+
+    <title>SquareShuttle</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <% yield(:css) %>
+    
+    <%= javascript_include_tag 'modernizr', 'application', 'data-turbolinks-track' => 'reload' %>
+    <%= yield(:javascript) %> 
+  </head>
+
+  <body>
+    <div id="preloader" style="text-align: center; padding-top: 80px; display: none;"><img src="/images/Preloader_3.gif" alt=""><br>Programming the flux capacitor...</div>
+    <div id="main" style="display: block;">
+      <%= render partial: 'layouts/header' %> 
+      <%= yield %>
+    </div>
+    <%= yield(:out_main) %>
+    <%= render partial: 'layouts/footer' %>
+  </body>
+</html>
