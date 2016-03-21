@@ -3,13 +3,13 @@ Rails.application.routes.draw do
 
   get "portfolio" => 'static#portfolio'
 
-  get 'static/services'
+  get "services" => 'static#services'
 
-  get 'static/about_us'
+  get "about_us" => 'static#about_us'
 
   get 'static/insights'
 
-  get 'static/get_in_touch'
+  get "contact" => 'static#contact'
 
   root :to => 'static#home'
 

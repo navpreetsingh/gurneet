@@ -1,0 +1,190 @@
+<div class="container">
+
+	<div class="row cont-top">
+		<div class="col-sm-8">
+			<h1 class="cont-title">Yay! You've made the right decision.</h1>
+			<p class="cont-txt">Let’s have a cup of <i style="color: #2c3e50;" class="fa fa-coffee fa-lg"></i> and discuss your project! </p>
+
+			<div class="row">
+			    <form name="contact_form_1" id="contact_form_1" method="post" action="./contact-1-send.php" onsubmit="javascript:return validate_contact_form_1();" enctype="multipart/form-data">
+
+				<div class="col-sm-6">
+			    <input type="text" name="name" class="form-control" placeholder="Name">
+
+				</div>
+				<div class="col-sm-6">
+	    			<input type="text" name="phone" class="form-control" placeholder="Phone Number">
+	  			</div>
+	  		</form></div>
+	  		<div class="row">
+				<div class="col-sm-6">
+				    <input type="text" name="company" class="form-control" placeholder="Company">
+
+				</div>
+				<div class="col-sm-6">
+	    			<input type="text" name="email" class="form-control" placeholder="Email">
+	  			</div>
+	  		</div>
+	  		<div class="row">
+					<div class="col-sm-6">
+					    <select class="select-block" name="project_type" style="display: none;">
+							<option selected="selected" value="Project Type">Choose Project Type</option>
+							<option value="Website Re-Design">Website Re-Design</option>
+							<option value="New Website">New Website</option>							
+						</select>
+						<div class="btn-group select select-block">
+							<i class="dropdown-arrow dropdown-arrow-inverse"></i>
+							<button class="btn dropdown-toggle clearfix btn-hg btn-primary" data-toggle="dropdown">
+								<span class="filter-option pull-left">Choose Project Type</span>
+								&nbsp;
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-inverse" role="menu" style="overflow-y: auto; min-height: 114px; max-height: 12px;">
+								<li rel="0" class="selected">
+									<a tabindex="-1" href="#" class="">
+										<span class="pull-left">Choose Project Type</span>
+									</a>
+								</li>
+								<li rel="1">
+									<a tabindex="-1" href="#" class="">
+										<span class="pull-left">Website Re-Design</span>
+									</a>
+								</li>
+								<li rel="2">
+									<a tabindex="-1" href="#" class="">
+										<span class="pull-left">New Website</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<select class="select-block" name="budget" style="display: none;">
+							<option selected="selected" value="">Select Budget Range</option>
+							<option value="Under $2,000">Under $2,000</option>
+							<option value="$2,000 - $5,000">$2,000 - $5,000</option>
+							<option value="$5,000 - $10,000">$5,000 - $10,000</option>
+							<option value="$10,000 - $20,000">$10,000 - $20,000</option>
+							<option value="$20,000 - $50,000">$20,000 - $50,000</option>			
+						</select>
+						<div class="btn-group select select-block">
+							<i class="dropdown-arrow dropdown-arrow-inverse"></i>
+							<button class="btn dropdown-toggle clearfix btn-hg btn-primary" data-toggle="dropdown">
+								<span class="filter-option pull-left">Select Budget Range</span>
+								&nbsp;
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-inverse" role="menu" style="overflow-y: auto; min-height: 114px; max-height: 12px;">
+								<li rel="0" class="selected">
+									<a tabindex="-1" href="#" class="">
+										<span class="pull-left">Select Budget Range</span>
+									</a>
+								</li>
+								<li rel="1">
+									<a tabindex="-1" href="#" class="">
+										<span class="pull-left">Under $2,000</span>
+									</a>
+								</li>
+								<li rel="2">
+									<a tabindex="-1" href="#" class="">
+										<span class="pull-left">$2,000 - $5,000</span>
+									</a>
+								</li>
+								<li rel="3">
+									<a tabindex="-1" href="#" class="">
+										<span class="pull-left">$5,000 - $10,000</span>
+									</a>
+								</li>
+								<li rel="4">
+									<a tabindex="-1" href="#" class="">
+										<span class="pull-left">$10,000 - $20,000</span>
+									</a>
+								</li>
+								<li rel="5">
+									<a tabindex="-1" href="#" class="">
+										<span class="pull-left">$20,000 - $50,000</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 mt20 mb20 services-form">
+						<h2>Select Services interested in:</h2>
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="checkbox" name="services[]" value="Creative Web design"> 
+								<span>Creative Web Design</span><br>
+                <input type="checkbox" name="services[]" value="Custom Web Development"> 
+                <span>Custom Web Development</span><br>
+                <input type="checkbox" name="services[]" value="Search Engine Optimization">
+                <span>Search Engine Optimization</span><br>
+							</div>
+							<div class="col-sm-6">
+								<input type="checkbox" name="services[]" value="Brand Identity"> <span>Brand Identity</span><br>
+		            <input type="checkbox" name="services[]" value="Social Media Management"> 
+		            <span>Social Media Management</span><br>
+		            <input type="checkbox" name="services[]" value="Wordpress CMS">
+		            <span>Wordpress CMS</span><br>
+							</div>
+						</div>
+					</div>
+				</div>
+	  		<div class="row">
+	  			<div class="col-sm-12">
+	  				<input type="hidden" name="package" value="">
+	  				<textarea class="form-control" name="comments" rows="6" placeholder="Tell us about your project and your current URL if any"></textarea>
+				</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-12 submit mob-center">
+  				<input type="submit" value="SEND IT" class="btn btn-primary" style="">
+
+  			</div>
+  		</div>
+  		<input type="hidden" name="ihatespam">		
+  	</div>
+
+  	<div class="col-sm-1"></div>
+
+  	<div class="col-sm-3 mt20">
+  		<h2>Get in touch!</h2>
+  		<div class="contact-us mt30">
+  			<p>We'd <i style="color: #e84c3d;" class="fa fa-heart"></i> to hear from you.</p>
+  			<p>Tel: 416-900-0869</p><hr>
+  			<div class="contact-social">
+	  			<a target="_blank" href="http://www.facebook.com/silentblastinteractive"><i class="fa fa-facebook facebook"></i> Like us on Facebook</a><br>
+	  			<a target="_blank" href="https://plus.google.com/109335371201079665242/about"><i class="fa fa-google-plus google"></i> Add us to your Circles</a><br>
+	  			<a target="_blank" href="https://twitter.com/#!/silentblast"><i class="fa fa-twitter twitter"></i> Follow us on Twitter</a>
+  			</div>
+
+  			<hr>
+  			<h2>Existing Clients</h2>
+  			<ul class="li-style no-indent">
+  				<li><a href="https://books.zoho.com/portal/silentblastinc/login">Client Portal Access</a></li>
+  				<li><a href="/hosting-support.php">Hosting/Tech Support</a></li>
+  			</ul>
+  		</div>
+  	</div>
+	</div>
+
+	<script type="text/javascript">
+		function validate_contact_form_1() {
+			if(document.contact_form_1.name.value.length == 0 || document.contact_form_1.name.value == 'Name')   { alert("Please enter your name.");    document.contact_form_1.name.focus(); return false; }
+			if(document.contact_form_1.phone.value.length == 0 || document.contact_form_1.name.value == 'Phone')   { alert("Please enter your phone number.");    document.contact_form_1.phone.focus(); return false; }
+			if(document.contact_form_1.company.value.length == 0 || document.contact_form_1.name.value == 'Company')   { alert("Please enter your company name.");    document.contact_form_1.company.focus(); return false; }
+
+			// Check email field:
+			if(typeof window.check_email == 'function') {
+				if (!check_email(document.contact_form_1.email.value)) 		{ alert('Please provide a valid email address'); document.contact_form_1.email.focus(); return false; }
+			}
+			else { alert('The check_email() function does not exist!'); return false; }
+
+
+	        document.contact_form_1.ihatespam.value = 'withapassion';
+
+			document.contact_form_1.submit();
+		}
+	</script>
+</div>

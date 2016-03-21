@@ -29,7 +29,10 @@
   </head>
 
   <body>
-    <div id="preloader" style="text-align: center; padding-top: 80px; display: none;"><img src="/images/Preloader_3.gif" alt=""><br>Programming the flux capacitor...</div>
+    <div id="preloader" style="text-align: center; padding-top: 80px; display: none;">
+      <%= image_tag "Preloader_3.gif", alt: "" %>      
+      <br>Programming the flux capacitor...
+    </div>
     <div id="main" style="display: block;">
       <%= render partial: 'layouts/header' %> 
       <%= yield %>

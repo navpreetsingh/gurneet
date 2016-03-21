@@ -11,12 +11,12 @@
 				<div class="col-lg-9 col-xs-12 col-sm-9">
                         <div class="nav-collapse pull-right">
 						<ul class="nav navbar-nav">
-							<li><a href="/">home</a></li>
-							<li><a href="/portfolio/1">portfolio</a></li>
-							<li><a href="/services.php">services</a></li>
-							<li><a href="/about-us.php">about us</a></li>
-							<li><a href="/insights/">insights</a></li>
-							<li><a href="/get-in-touch.php">get in touch</a></li>
+							<li><%= link_to "Home", root_url %></li>
+							<li><%= link_to "Portfolio", portfolio_url %></li>
+							<li><%= link_to "Services", services_url %></li>
+							<li><%= link_to "About Us", about_us_url %></li>
+						<!-- 	<li><a href="/insights/">insights</a></li> -->
+							<li><%= link_to "Get in Touch", contact_url %></li>
 
 						</ul>
 					</div><!-- /.nav-collapse -->
@@ -32,11 +32,10 @@
 <div id="head-bg" class="visible-sm">
 	<div class="container">
 		<div class="row">
-
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
 			<div id="lwd_mobile_pop_nav" class="phone-menu sm-nav" style="right: -185px;">
-				<a href="#" class="pull-left menu-btn"><img src="/images/layout/menu-btn.png" alt=""></a>
+				<a href="#" class="pull-left menu-btn">
+					<%= image_tag "menu-btn.png", alt: "" %>					
+					</a>
 				<div class="menu" style="height: 311px;">
 					<a href="/" class="menu-item" style="line-height: 38px; height: 38px;">
 						<div class="menu-item-inner">
@@ -75,13 +74,13 @@
 					</a>
 
 					<div class="bottom-logo">
-						<img src="/images/layout/logo-lg.png" alt="">
+						<%= image_tag "logo-lg.png", alt: "" %>						
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-8 col-sm-8">
 				<a class="logo mlogo" href="/">
-					<img src="/images/layout/logo.png" alt="">
+					<%= image_tag "logo.png", alt: "" %>
 				</a>
 			</div>
 

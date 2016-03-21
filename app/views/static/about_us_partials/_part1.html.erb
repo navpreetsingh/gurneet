@@ -1,0 +1,67 @@
+<div class="container">
+
+</div>
+
+<div id="slider-container" class="col-12 col-lg-12 col-sm-12" style="display: block;">
+	<!-- Lush Slider (autoload) -->
+	<div id="main-slider" class="lush-slider container lush-skin-borderless about-top" data-slider-pause-on-hover="true" style="height: 556px;">
+        <!-- Slide 1 -->
+    <div class="lush row active paused" style="margin: 0px; width: 960px; height: 556px; visibility: visible; display: block;">
+			<div class="banner_txt col-12 col-lg-12 col-sm-12 in fade live" style="top: 37.7698%; position: absolute; font-size: 16px; line-height: 19px; padding: 0px; border: 0px none rgb(52, 73, 94); height: 136px; width: 960px; transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;" data-slide-in="at 600 from fade use easeOutBack during 600" data-slide-out="at 1500 to fade use easeInBack during 600">
+				<p>We're a small team of web super heros<br></p>
+				<b>who are fuelled by passion.</b>
+			</div>
+		</div> <!-- EO slide1 -->
+
+		<div class="lush-shadow"></div>
+	</div>
+	<!-- /Lush Slider -->
+</div>
+
+
+<script>
+	$(function(){
+		$('#main-slider').lush({
+            baseWidth: 960,
+		    baseHeight: 556,
+		    deadtime: 5000,
+		    manual: true,
+		    slider: {
+		    	navigation: false,
+		    	responsive: true
+			}
+		});
+	})
+</script>
+
+
+<style type="text/css">
+	#slider-container {
+		width:100%;
+		overflow-y:hidden;
+		background: url('/assets/web-superheros.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.banner_txt { text-align: center; }
+	.banner_txt p, .banner_txt b { display: block; font-size: 48px; margin: 0 0 12px 0; font-family: 'Roboto', sans-serif; color: #FFF; font-weight: 100; line-height: 56px; }
+	.banner_txt b { font-weight: 700; }
+	.banner_link { text-align: center; }
+	.banner_txt, .banner_link { width: 960px; padding: 0; }
+	.lush * { white-space: normal !important; }
+
+	@media only screen and (max-width: 1024px) {
+		#slider-container {
+			/*background-size: 100% auto;*/
+			background-attachment: scroll;
+		}
+	}
+</style>
+
+
+<div class="clear"></div>

@@ -1,0 +1,45 @@
+<div class="flexslider-container">
+	<div class="flexslider about-bot">
+		<ul class="slides" style="background: url('/assets/banner20.jpg') no-repeat fixed center center / cover;">
+			<li style="display: list-item;">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="about-banner">
+								<div class="text-center about-tinner">
+									<p>We believe in keeping it simple</p>
+									<a href="/process.php" class="btn btn-primary">View Our Process</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+// Initiate Full Width Slider/Fader
+	$('.about-bot').flexslider({
+		animation: "fade", //String: Select your animation type, "fade" or "slide"
+		easing: "swing", //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
+		direction: "horizontal", //String: Select the sliding direction, "horizontal" or "vertical"
+		animationLoop: true, //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+		startAt: 0, //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+		slideshow: true, //Boolean: Animate slider automatically
+		slideshowSpeed: 5000, //Integer: Set the speed of the slideshow cycling, in milliseconds
+		animationSpeed: 2000, //Integer: Set the speed of animations, in milliseconds
+		randomize: false, //Boolean: Randomize slide order
+
+		// Usability features
+		pauseOnAction: true, //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+		pauseOnHover: false, //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+		useCSS: true, //{NEW} Boolean: Slider will use CSS3 transitions if available
+
+		// Primary Controls
+		controlNav: true, //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+		directionNav: true //Boolean: Create navigation for previous/next navigation? (true/false)
+	});
+</script>

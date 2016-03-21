@@ -14,6 +14,6 @@ class StaticController < ApplicationController
   def insights
   end
 
-  def get_in_touch
+  def contact
   end
 end
