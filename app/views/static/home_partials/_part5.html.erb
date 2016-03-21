@@ -1,0 +1,61 @@
+<div class="row" style="margin: 0px;">
+	<div id="slider-container2" class="col-12 col-lg-12 col-sm-12" style="display: block;">
+		<!-- Lush Slider (autoload) -->
+		<div id="main-slider2" class="lush-slider container lush-skin-borderless" data-slider-pause-on-hover="true" style="height: 371.067px;">
+      <!-- Slide 1 -->
+      <div class="lush row active paused" style="width: 960px; height: 371.067px; visibility: visible; display: block;">
+				<div class="banner_txt col-12 col-lg-12 col-sm-12 in fade live" style="top: 32.1716%; position: absolute; font-size: 15px; line-height: 18px; padding: 0px; border: 0px none rgb(52, 73, 94); height: 119.378px; width: 955.026px; transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;" data-slide-in="at 0 from fade use easeOutBack during 600" data-slide-out="at 1500 to fade use easeInBack during 600">
+					<p>Experience you can count on</p>
+					<b>and strategies that deliver</b>
+				</div>
+			</div> <!-- EO slide1 -->
+			<div class="lush-shadow"></div>
+		</div>
+		<!-- /Lush Slider -->
+	</div>
+
+	<!-- Plugin invocation -->
+	<script>
+		$(function(){
+			$('#main-slider2').lush({
+	            baseWidth: 965,
+			    baseHeight: 373,
+			    deadtime: 5000,
+			    manual: true,
+			    slider: {
+			    	navigation: false,
+			    	responsive: true
+				}
+			});
+		})
+	</script>
+
+	<!-- Slider custom styles -->
+	<style type="text/css">
+		#slider-container2 {
+			width:100%;
+			overflow-y:hidden;
+			background: url('/assets/banner6_1.jpg');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		.banner_txt { text-align: center; }
+		.banner_txt p, .banner_txt b { display: block; font-size: 48px; margin: 0 0 12px 0; font-family: 'Roboto', sans-serif; color: #FFF; font-weight: 100; line-height: 48px; }
+		.banner_txt b { font-weight: 700; }
+		.banner_link { text-align: center; }
+		.banner_txt, .banner_link { width: 960px; padding: 0; }
+
+		@media only screen and (max-width: 1024px) {
+			#slider-container2 {
+				/*background-size: 100% auto;*/
+				background-attachment: scroll;
+			}
+		}
+	</style> 	   
+	<div class="clear"></div>
+</div>
