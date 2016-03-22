@@ -9,7 +9,7 @@
 				</div>
 
 				<div class="col-lg-9 col-xs-12 col-sm-9">
-                        <div class="nav-collapse pull-right">
+          <div class="nav-collapse pull-right">
 						<ul class="nav navbar-nav">
 							<li><%= link_to "Home", root_url %></li>
 							<li><%= link_to "Portfolio", portfolio_url %></li>
@@ -37,41 +37,35 @@
 					<%= image_tag "menu-btn.png", alt: "" %>					
 					</a>
 				<div class="menu" style="height: 311px;">
-					<a href="/" class="menu-item" style="line-height: 38px; height: 38px;">
+					<%= link_to root_url, class: "menu-item", style: "line-height: 38px; height: 38px;" do %>
 						<div class="menu-item-inner">
-							<i class="fa fa-home"></i> home
+							<i class="fa fa-home"></i> Home
 						</div>
-					</a>
+					<% end %>
 
-					<a href="/portfolio/1" class="menu-item" style="line-height: 38px; height: 38px;">
+					<%= link_to portfolio_url, class: "menu-item", style: "line-height: 38px; height: 38px;" do %>
 						<div class="menu-item-inner">
-							<i class="fa fa-suitcase"></i> portfolio
+							<i class="fa fa-suitcase"></i> Portfolio
 						</div>
-					</a>
+					<% end %>
 
-					<a href="/services.php" class="menu-item" style="line-height: 38px; height: 38px;">
+					<%= link_to services_url, class: "menu-item", style: "line-height: 38px; height: 38px;" do %>
 						<div class="menu-item-inner">
-							<i class="fa fa-camera"></i> services
+							<i class="fa fa-camera"></i> Services
 						</div>
-					</a>
+					<% end %>
 
-					<a href="/about-us.php" class="menu-item" style="line-height: 38px; height: 38px;">
+					<%= link_to about_us_url, class: "menu-item", style: "line-height: 38px; height: 38px;" do %>
 						<div class="menu-item-inner">
-							<i class="fa fa-heart"></i> about us
+							<i class="fa fa-heart"></i> About Us
 						</div>
-					</a>
+					<% end %>
 
-					<a href="/insights/" class="menu-item" style="line-height: 38px; height: 38px;">
+					<%= link_to contact_url, class: "menu-item", style: "line-height: 38px; height: 38px;" do %>
 						<div class="menu-item-inner">
-							<i class="fa fa-comments"></i> insights
+							<i class="fa fa-phone-square"></i> Get in Touch
 						</div>
-					</a>
-
-					<a href="/get-in-touch.php" class="menu-item" style="line-height: 38px; height: 38px;">
-						<div class="menu-item-inner">
-							<i class="fa fa-phone-square"></i> get in touch
-						</div>
-					</a>
+					<% end %>
 
 					<div class="bottom-logo">
 						<%= image_tag "logo-lg.png", alt: "" %>						
