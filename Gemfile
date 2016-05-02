@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.beta3', '< 5.1'
 # Use Puma as the app server
@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -46,6 +46,18 @@ group :development, :test do
 end
 
 group :development do
+  # Official Ruby on Rails specific tasks for Capistrano http://www.capistranorb.com/
+  gem 'capistrano-rails'
+
+  # RVM support for Capistrano v3
+  gem 'capistrano-rvm'
+
+  # GEM Bundler
+  # gem 'capistrano/bundler'
+
+  # To run appliction on PUMA server
+  gem 'capistrano3-puma'
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 3.0'
   gem 'listen', '~> 3.0.5'
